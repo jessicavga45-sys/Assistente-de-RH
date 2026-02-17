@@ -3,38 +3,47 @@
 ## 📋 Sobre o Projeto
 Este repositório foi desenvolvido para o desafio de projeto **"Criando um Chatbot Baseado em Conteúdo de PDFs 🍦📊"** da **Digital Innovation One (DIO)**. O objetivo principal foi aplicar conceitos de **RAG (Retrieval-Augmented Generation)** utilizando o **Azure AI Foundry** para transformar documentos estáticos em uma base de conhecimento interativa e consultiva.
 
-O assistente foi configurado para atuar como um especialista em **Recursos Humanos e Legislação**, integrando dados da legislação federal (**CLT**) com o **Estatuto do Servidor de Varginha** e diversas **Normas Regulamentadoras (NRs)**.
+O assistente atua como um especialista em **Recursos Humanos e Legislação**, integrando dados da legislação federal (**CLT**) com o **Estatuto do Servidor de Varginha** e diversas **Normas Regulamentadoras (NRs)**.
 
 ## 📂 Estrutura do Repositório
-* **`/inputs`**: Contém os 11 arquivos PDF utilizados como base de conhecimento (CLT, Estatuto de Varginha e NRs principais).
-* **`/screenshots`**: Registros visuais das etapas de configuração, indexação e testes do chatbot.
+* **`/inputs`**: Arquivos PDF utilizados como base de conhecimento (CLT, Estatuto de Varginha e NRs).
+* **`/screenshots`**: Registros visuais das etapas de configuração e validação do chatbot.
 
 ## 🛠️ Tecnologias Utilizadas
-* **Azure AI Foundry**: Plataforma utilizada para a orquestração da solução de IA.
-* **GPT-4o**: Modelo de linguagem de última geração para processamento de respostas.
-* **Azure AI Search (Plano Gratuito F)**: Motor de busca e indexação de documentos.
-* **Busca Híbrida**: Combinação de vetores e palavras-chave para garantir máxima precisão nas respostas.
+* **Azure AI Foundry**: Orquestração da solução de IA.
+* **GPT-4o**: Modelo de linguagem para processamento de respostas.
+* **Azure AI Search (Plano Gratuito F)**: Motor de busca e indexação.
+* **Busca Híbrida**: Combinação de vetores e palavras-chave para alta precisão.
 
 ## 📈 Processo e Desafios Superados
 O projeto processou um volume total de **14,5 MB** de conteúdo jurídico, resultando em um índice de **1.351 documentos fragmentados** para facilitar a busca semântica.
 
 ### 🚧 Insights Técnicos:
-1.  **Ingestão de Dados**: Foi necessário utilizar o **modo anônimo** do navegador para superar instabilidades de cache na interface do Azure e concluir com sucesso as etapas de indexação.
-2.  **Segurança e Identidade**: Durante o provisionamento do Web App, foram identificadas restrições de **Managed Identity** (Código 400), optando-se pela validação funcional via Playground para assegurar a integridade do projeto.
-3.  **Controle de Custos**: Monitoramento ativo da assinatura Azure para garantir que o projeto operasse dentro do nível **Gratuito (F)**.
+1.  **Ingestão de Dados**: Uso de **modo anônimo** para superar instabilidades de cache na interface do Azure e concluir a indexação.
+2.  **Segurança e Identidade**: Diagnóstico de restrições de **Managed Identity** no provisionamento de Web Apps, validando a solução via Playground.
+3.  **Controle de Custos**: Monitoramento da assinatura para garantir operação dentro do nível **Gratuito (F)**.
 
-## 🚀 Resultados
-O chatbot demonstrou alta precisão técnica, conseguindo diferenciar normas de esferas distintas e responder sobre temas complexos, como o adicional de insalubridade da **NR-15**, citando corretamente que o cálculo é baseado no salário mínimo da região.
+## 🚀 Resultados e Evidências
+O chatbot demonstrou alta precisão técnica ao responder sobre temas como o adicional de insalubridade da **NR-15**, baseando-se no salário mínimo regional.
 
 ---
 
-### 📸 Galeria de Evidências (Screenshots)
+### 📸 Galeria de Execução
 
-| Descrição | Arquivo |
-| :--- | :--- |
-| **Configuração do Assistente** | `screenshots/Arquitetura e Configuração.jpg` |
-| **Status da Ingestão** | `screenshots/Gestão de Ingestão (RAG).png` |
-| **Índice de Pesquisa Concluído** | `Validação do Banco de Dados.png` |
-| **Validação Técnica (Chat)** | `O Bot em Ação.png` |
+#### 1. Arquitetura e Configuração
+Configuração do modelo GPT-4o e definição das instruções de sistema para o assistente de RH.
+![Arquitetura e Configuração](screenshots/Arquitetura%20e%20Configuração.png)
+
+#### 2. Gestão de Ingestão (RAG)
+Acompanhamento do processo de quebra, agrupamento e indexação dos documentos no Azure.
+![Gestão de Ingestão](screenshots/Gestão%20de%20Ingestão%20(RAG).png)
+
+#### 3. Validação do Banco de Dados
+Visualização do índice concluído com os 1.351 fragmentos de dados prontos para busca.
+![Validação do Banco de Dados](screenshots/Validação%20do%20Banco%20de%20Dados.png)
+
+#### 4. O Bot em Ação
+Exemplo de resposta consultiva do chatbot utilizando a base de dados de NRs.
+![O Bot em Ação](screenshots/O%20Bot%20em%20Ação.png)
 
 ---
