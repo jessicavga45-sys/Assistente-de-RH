@@ -1,2 +1,40 @@
-# Assistente-de-RH-e-Legisla-o---Varginha-CLT
-Este repositório foi desenvolvido para o desafio de projeto "Criando um Chatbot Baseado em Conteúdo de PDFs 🍦📊" da Digital Innovation One (DIO). O objetivo foi aplicar conceitos de RAG (Retrieval-Augmented Generation) utilizando serviços de nuvem para transformar documentos estáticos em uma base de conhecimento interativa.
+# 🤖 Assistente de RH e Legislação - Varginha & CLT 🍦📊
+
+## 📋 Sobre o Projeto
+Este repositório foi desenvolvido para o desafio de projeto **"Criando um Chatbot Baseado em Conteúdo de PDFs 🍦📊"** da **Digital Innovation One (DIO)**. O objetivo principal foi aplicar conceitos de **RAG (Retrieval-Augmented Generation)** utilizando o **Azure AI Foundry** para transformar documentos estáticos em uma base de conhecimento interativa e consultiva.
+
+O assistente foi configurado para atuar como um especialista em **Recursos Humanos e Legislação**, integrando dados da legislação federal (**CLT**) com o **Estatuto do Servidor de Varginha** e diversas **Normas Regulamentadoras (NRs)**.
+
+## 📂 Estrutura do Repositório
+* **`/inputs`**: Contém os 11 arquivos PDF utilizados como base de conhecimento (CLT, Estatuto de Varginha e NRs principais).
+* **`/screenshots`**: Registros visuais das etapas de configuração, indexação e testes do chatbot.
+
+## 🛠️ Tecnologias Utilizadas
+* **Azure AI Foundry**: Plataforma utilizada para a orquestração da solução de IA.
+* **GPT-4o**: Modelo de linguagem de última geração para processamento de respostas.
+* **Azure AI Search (Plano Gratuito F)**: Motor de busca e indexação de documentos.
+* **Busca Híbrida**: Combinação de vetores e palavras-chave para garantir máxima precisão nas respostas.
+
+## 📈 Processo e Desafios Superados
+O projeto processou um volume total de **14,5 MB** de conteúdo jurídico, resultando em um índice de **1.351 documentos fragmentados** para facilitar a busca semântica.
+
+### 🚧 Insights Técnicos:
+1.  **Ingestão de Dados**: Foi necessário utilizar o **modo anônimo** do navegador para superar instabilidades de cache na interface do Azure e concluir com sucesso as etapas de indexação.
+2.  **Segurança e Identidade**: Durante o provisionamento do Web App, foram identificadas restrições de **Managed Identity** (Código 400), optando-se pela validação funcional via Playground para assegurar a integridade do projeto.
+3.  **Controle de Custos**: Monitoramento ativo da assinatura Azure para garantir que o projeto operasse dentro do nível **Gratuito (F)**.
+
+## 🚀 Resultados
+O chatbot demonstrou alta precisão técnica, conseguindo diferenciar normas de esferas distintas e responder sobre temas complexos, como o adicional de insalubridade da **NR-15**, citando corretamente que o cálculo é baseado no salário mínimo da região.
+
+---
+
+### 📸 Galeria de Evidências (Screenshots)
+
+| Descrição | Arquivo |
+| :--- | :--- |
+| **Configuração do Assistente** | `screenshots/Captura de tela 2026-02-16 175448.jpg` |
+| **Status da Ingestão** | `screenshots/Captura de tela 2026-02-16 203428.jpg` |
+| **Índice de Pesquisa Concluído** | `screenshots/image_b30e4c.png` |
+| **Validação Técnica (Chat)** | `screenshots/image_b4cc09.jpg` |
+
+---
