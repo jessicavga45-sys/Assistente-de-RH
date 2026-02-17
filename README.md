@@ -32,9 +32,9 @@ O chatbot demonstrou alta precisão técnica, conseguindo diferenciar normas de 
 
 | Descrição | Arquivo |
 | :--- | :--- |
-| **Configuração do Assistente** | `screenshots/Captura de tela 2026-02-16 175448.jpg` |
-| **Status da Ingestão** | `screenshots/Captura de tela 2026-02-16 203428.jpg` |
-| **Índice de Pesquisa Concluído** | `screenshots/image_b30e4c.png` |
-| **Validação Técnica (Chat)** | `screenshots/image_b4cc09.jpg` |
+| **Configuração do Assistente** | `screenshots/Arquitetura e Configuração.jpg` |
+| **Status da Ingestão** | `screenshots/Gestão de Ingestão (RAG).png` |
+| **Índice de Pesquisa Concluído** | `Validação do Banco de Dados.png` |
+| **Validação Técnica (Chat)** | `O Bot em Ação.png` |
 
 ---
